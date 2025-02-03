@@ -6,6 +6,7 @@ use super::Status;
 
 pub struct Invoice {
     id: i32,
+    revision_id: i32,
     number: String,
     description: Option<String>,
     client_id: i32,

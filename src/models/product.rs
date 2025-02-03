@@ -1,10 +1,12 @@
 use chrono::{DateTime, Utc};
-use super::Status;
+use super::{Unit, Status};
 
 pub struct Product {
     id: i32,
-    name: String,
+    code: String,
+    short_description: String,
     description: Option<String>,
+    unit: Unit,
     price: f64,
     status: Status,
     created_at: DateTime<Utc>,
